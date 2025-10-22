@@ -1,6 +1,21 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// app/layout.js
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className="h-full">
+      <body className="min-h-screen h-full bg-fixed bg-cover bg-center bg-no-repeat relative
+                       bg-[url('/beirut607.jpg')]">
+        {/* optional dim overlay */}
+        <div className="pointer-events-none absolute inset-0 bg-black/40" />
+        <main className="relative">{children}</main>
+      </body>
+    </html>
+  );
+}
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
