@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+/* globals.css */
+body {
+  /* put the photo behind everything, scaled and fixed */
+  background:
+    linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url('/beirut607.jpg') center / cover no-repeat fixed;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Optional: stronger dim in dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background:
+      linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+      url('/beirut607.jpg') center / cover no-repeat fixed;
+  }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
