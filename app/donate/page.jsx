@@ -1,4 +1,4 @@
-"use client"; //TRY
+"use client"; // try now
 import { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements, PaymentElement, useElements, useStripe } from "@stripe/react-stripe-js";
